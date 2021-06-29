@@ -1,5 +1,7 @@
 #SPS-Webapp
 
+(WK5 Responsibility: BusinessLandingPg - AT)
+
 Contains the barebones for the Webapp
 
 To run a local server,
