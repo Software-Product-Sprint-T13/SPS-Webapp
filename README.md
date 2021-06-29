@@ -8,4 +8,4 @@ execute this command:
 ```
 mvn package exec:java
 ```
-Test PR protection rule
+Test PR protection rule #1
