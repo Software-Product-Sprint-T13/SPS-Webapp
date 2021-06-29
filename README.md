@@ -1,6 +1,6 @@
 #SPS-Webapp
 
-(WK5 Responsibility: Business Landing Pg - AT)
+(WK5 Responsibility: BusinessLandingPg - AT)
 
 Contains the barebones for the Webapp
 
