@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Webapp Project</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <header>
+      <h1 style="font-size:22px;">Landing Page Creation: Business Form</h1>
+  </header>
+  <body>
+    <aside class = "aside">
+        <section>
+            <h2 style="font-size:22px;">Guidelines</h2>            
+                <form action="/form-handler" method="POST">
+                    <p>Enter guidelines here:</p>
+                    <textarea name="text-input" rows="20" cols="40">We follow...</textarea>
+                    <br/>
+                    <input type="submit" />
+                </form>
+        </section>
+        <section>
+            <h2 style="font-size:22px;">Business Description</h2>            
+                <form action="/form-handler" method="POST">
+                    <p>Enter business description here:</p>
+                    <textarea name="text-input" rows="20" cols="40">Our work entails...</textarea>
+                    <br/>
+                    <input type="submit" />
+                </form>   
+        </section>
+    </aside>
+    <main>
+        <article>
+            <section>
+                <h2 style="font-size:22px;">Business Name:</h2>
+                    <form action="/form-handler" method="POST">
+                        <p>Enter business description here:</p>
+                        <textarea name="text-input" rows="10" cols="100">Our work entails...</textarea>
+                        <br/>
+                        <input type="submit"/>
+                    </form>
+            </section>
+            <section>
+                <h2 style="font-size:22px;">Business Address:</h2>
+                    <form action="/form-handler" method="POST">
+                        <p>Enter business address here:</p>
+                        <textarea name="text-input" rows="10" cols="100">We are located...</textarea>
+                        <br/>
+                        <input type="submit"/>
+                    </form>
+            </section>
+            <section>
+                <h2 style="font-size:22px;">Contact Number(s):</h2>
+                    <form action="/form-handler" method="POST">
+                        <p>Enter business number here:</p>
+                        <textarea name="text-input" rows="5" cols="100">You may reach us at...</textarea>
+                        <br/>
+                        <input type="submit"/>
+                    </form>
+            </section>
+            <section>
+                <div class="dayops">
+                    <h2 style="font-size:22px;">Availability:</h2>
+                    <form action="/form-handler" id="dates">
+                        <label for="availability">Dates and Time Selected:</label>
+                        <input type="submit">
+                    </form>
+                    <br>
+                    <label>Sunday TO:</label>
+                    <select id="from" name="daylist" form="dates">
+                        <option value="1am">1am</option>
+                        <option value="2am">2am</option>
+                        <option value="3am">3am</option>
+                        <option value="4am">4am</option>
+                        <option value="5am">5am</option>
+                        <option value="6am">6am</option>
+                        <option value="7am">7am</option>
+                        <option value="8am">8am</option>
+                        <option value="9am">9am</option>
+                        <option value="10am">10am</option>
+                        <option value="11am">11am</option>
+                        <option value="12pm">12pm</option>
+                        <option value="1pm">1pm</option>
+                        <option value="2pm">2pm</option>
+                        <option value="3pm">3pm</option>
+                        <option value="4pm">4pm</option>
+                        <option value="5pm">5pm</option>
+                        <option value="6pm">6pm</option>
+                        <option value="7pm">7pm</option>
+                        <option value="8pm">8pm</option>
+                        <option value="9pm">9pm</option>
+                        <option value="10pm">10pm</option>
+                        <option value="11pm">11pm</option>
+                        <option value="12am">12am</option>
+                    </select>
+                    <label>Monday TO:</label>
+                    <select id="from" name="daylist" form="dates">
+                        <option value="1am">1am</option>
+                        <option value="2am">2am</option>
+                        <option value="3am">3am</option>
+                        <option value="4am">4am</option>
+                        <option value="5am">5am</option>
+                        <option value="6am">6am</option>
+                        <option value="7am">7am</option>
+                        <option value="8am">8am</option>
+                        <option value="9am">9am</option>
+                        <option value="10am">10am</option>
+                        <option value="11am">11am</option>
+                        <option value="12pm">12pm</option>
+                        <option value="1pm">1pm</option>
+                        <option value="2pm">2pm</option>
+                        <option value="3pm">3pm</option>
+                        <option value="4pm">4pm</option>
+                        <option value="5pm">5pm</option>
+                        <option value="6pm">6pm</option>
+                        <option value="7pm">7pm</option>
+                        <option value="8pm">8pm</option>
+                        <option value="9pm">9pm</option>
+                        <option value="10pm">10pm</option>
+                        <option value="11pm">11pm</option>
+                        <option value="12am">12am</option>
+                    </select>
+                    <label>Tuesday TO:</label>
+                    <select id="from" name="daylist" form="dates">
+                        <option value="1am">1am</option>
+                        <option value="2am">2am</option>
+                        <option value="3am">3am</option>
+                        <option value="4am">4am</option>
+                        <option value="5am">5am</option>
+                        <option value="6am">6am</option>
+                        <option value="7am">7am</option>
+                        <option value="8am">8am</option>
+                        <option value="9am">9am</option>
+                        <option value="10am">10am</option>
+                        <option value="11am">11am</option>
+                        <option value="12pm">12pm</option>
+                        <option value="1pm">1pm</option>
+                        <option value="2pm">2pm</option>
+                        <option value="3pm">3pm</option>
+                        <option value="4pm">4pm</option>
+                        <option value="5pm">5pm</option>
+                        <option value="6pm">6pm</option>
+                        <option value="7pm">7pm</option>
+                        <option value="8pm">8pm</option>
+                        <option value="9pm">9pm</option>
+                        <option value="10pm">10pm</option>
+                        <option value="11pm">11pm</option>
+                        <option value="12am">12am</option>
+                    </select>
+                    <label>Wednesday TO:</label>
+                    <select id="from" name="daylist" form="dates">
+                        <option value="1am">1am</option>
+                        <option value="2am">2am</option>
+                        <option value="3am">3am</option>
+                        <option value="4am">4am</option>
+                        <option value="5am">5am</option>
+                        <option value="6am">6am</option>
+                        <option value="7am">7am</option>
+                        <option value="8am">8am</option>
+                        <option value="9am">9am</option>
+                        <option value="10am">10am</option>
+                        <option value="11am">11am</option>
+                        <option value="12pm">12pm</option>
+                        <option value="1pm">1pm</option>
+                        <option value="2pm">2pm</option>
+                        <option value="3pm">3pm</option>
+                        <option value="4pm">4pm</option>
+                        <option value="5pm">5pm</option>
+                        <option value="6pm">6pm</option>
+                        <option value="7pm">7pm</option>
+                        <option value="8pm">8pm</option>
+                        <option value="9pm">9pm</option>
+                        <option value="10pm">10pm</option>
+                        <option value="11pm">11pm</option>
+                        <option value="12am">12am</option>
+                    </select>
+                    <label>Thursday TO:</label>
+                    <select id="from" name="daylist" form="dates">
+                        <option value="1am">1am</option>
+                        <option value="2am">2am</option>
+                        <option value="3am">3am</option>
+                        <option value="4am">4am</option>
+                        <option value="5am">5am</option>
+                        <option value="6am">6am</option>
+                        <option value="7am">7am</option>
+                        <option value="8am">8am</option>
+                        <option value="9am">9am</option>
+                        <option value="10am">10am</option>
+                        <option value="11am">11am</option>
+                        <option value="12pm">12pm</option>
+                        <option value="1pm">1pm</option>
+                        <option value="2pm">2pm</option>
+                        <option value="3pm">3pm</option>
+                        <option value="4pm">4pm</option>
+                        <option value="5pm">5pm</option>
+                        <option value="6pm">6pm</option>
+                        <option value="7pm">7pm</option>
+                        <option value="8pm">8pm</option>
+                        <option value="9pm">9pm</option>
+                        <option value="10pm">10pm</option>
+                        <option value="11pm">11pm</option>
+                        <option value="12am">12am</option>
+                    </select>
+                    <label>Friday TO:</label>
+                    <select id="from" name="daylist" form="dates">
+                        <option value="1am">1am</option>
+                        <option value="2am">2am</option>
+                        <option value="3am">3am</option>
+                        <option value="4am">4am</option>
+                        <option value="5am">5am</option>
+                        <option value="6am">6am</option>
+                        <option value="7am">7am</option>
+                        <option value="8am">8am</option>
+                        <option value="9am">9am</option>
+                        <option value="10am">10am</option>
+                        <option value="11am">11am</option>
+                        <option value="12pm">12pm</option>
+                        <option value="1pm">1pm</option>
+                        <option value="2pm">2pm</option>
+                        <option value="3pm">3pm</option>
+                        <option value="4pm">4pm</option>
+                        <option value="5pm">5pm</option>
+                        <option value="6pm">6pm</option>
+                        <option value="7pm">7pm</option>
+                        <option value="8pm">8pm</option>
+                        <option value="9pm">9pm</option>
+                        <option value="10pm">10pm</option>
+                        <option value="11pm">11pm</option>
+                        <option value="12am">12am</option>
+                    </select>
+                    <label>Saturday TO:</label>
+                    <select id="from" name="daylist" form="dates">
+                        <option value="1am">1am</option>
+                        <option value="2am">2am</option>
+                        <option value="3am">3am</option>
+                        <option value="4am">4am</option>
+                        <option value="5am">5am</option>
+                        <option value="6am">6am</option>
+                        <option value="7am">7am</option>
+                        <option value="8am">8am</option>
+                        <option value="9am">9am</option>
+                        <option value="10am">10am</option>
+                        <option value="11am">11am</option>
+                        <option value="12pm">12pm</option>
+                        <option value="1pm">1pm</option>
+                        <option value="2pm">2pm</option>
+                        <option value="3pm">3pm</option>
+                        <option value="4pm">4pm</option>
+                        <option value="5pm">5pm</option>
+                        <option value="6pm">6pm</option>
+                        <option value="7pm">7pm</option>
+                        <option value="8pm">8pm</option>
+                        <option value="9pm">9pm</option>
+                        <option value="10pm">10pm</option>
+                        <option value="11pm">11pm</option>
+                        <option value="12am">12am</option>
+                    </select>
+                </div>
+                <p>------------------------------------------------------------------------------------------------------------------</p>
+                <div class="timeops">
+                    <label>Sunday FROM:</label>
+                    <select id="from" name="daylist" form="dates">
+                        <option value="1am">1am</option>
+                        <option value="2am">2am</option>
+                        <option value="3am">3am</option>
+                        <option value="4am">4am</option>
+                        <option value="5am">5am</option>
+                        <option value="6am">6am</option>
+                        <option value="7am">7am</option>
+                        <option value="8am">8am</option>
+                        <option value="9am">9am</option>
+                        <option value="10am">10am</option>
+                        <option value="11am">11am</option>
+                        <option value="12pm">12pm</option>
+                        <option value="1pm">1pm</option>
+                        <option value="2pm">2pm</option>
+                        <option value="3pm">3pm</option>
+                        <option value="4pm">4pm</option>
+                        <option value="5pm">5pm</option>
+                        <option value="6pm">6pm</option>
+                        <option value="7pm">7pm</option>
+                        <option value="8pm">8pm</option>
+                        <option value="9pm">9pm</option>
+                        <option value="10pm">10pm</option>
+                        <option value="11pm">11pm</option>
+                        <option value="12am">12am</option>
+                    </select>
+                    <label>Monday FROM:</label>
+                    <select id="from" name="daylist" form="dates">
+                        <option value="1am">1am</option>
+                        <option value="2am">2am</option>
+                        <option value="3am">3am</option>
+                        <option value="4am">4am</option>
+                        <option value="5am">5am</option>
+                        <option value="6am">6am</option>
+                        <option value="7am">7am</option>
+                        <option value="8am">8am</option>
+                        <option value="9am">9am</option>
+                        <option value="10am">10am</option>
+                        <option value="11am">11am</option>
+                        <option value="12pm">12pm</option>
+                        <option value="1pm">1pm</option>
+                        <option value="2pm">2pm</option>
+                        <option value="3pm">3pm</option>
+                        <option value="4pm">4pm</option>
+                        <option value="5pm">5pm</option>
+                        <option value="6pm">6pm</option>
+                        <option value="7pm">7pm</option>
+                        <option value="8pm">8pm</option>
+                        <option value="9pm">9pm</option>
+                        <option value="10pm">10pm</option>
+                        <option value="11pm">11pm</option>
+                        <option value="12am">12am</option>
+                    </select>
+                    <label>Tuesday FROM:</label>
+                    <select id="from" name="daylist" form="dates">
+                        <option value="1am">1am</option>
+                        <option value="2am">2am</option>
+                        <option value="3am">3am</option>
+                        <option value="4am">4am</option>
+                        <option value="5am">5am</option>
+                        <option value="6am">6am</option>
+                        <option value="7am">7am</option>
+                        <option value="8am">8am</option>
+                        <option value="9am">9am</option>
+                        <option value="10am">10am</option>
+                        <option value="11am">11am</option>
+                        <option value="12pm">12pm</option>
+                        <option value="1pm">1pm</option>
+                        <option value="2pm">2pm</option>
+                        <option value="3pm">3pm</option>
+                        <option value="4pm">4pm</option>
+                        <option value="5pm">5pm</option>
+                        <option value="6pm">6pm</option>
+                        <option value="7pm">7pm</option>
+                        <option value="8pm">8pm</option>
+                        <option value="9pm">9pm</option>
+                        <option value="10pm">10pm</option>
+                        <option value="11pm">11pm</option>
+                        <option value="12am">12am</option>
+                    </select>
+                    <label>Wednesday FROM:</label>
+                    <select id="from" name="daylist" form="dates">
+                        <option value="1am">1am</option>
+                        <option value="2am">2am</option>
+                        <option value="3am">3am</option>
+                        <option value="4am">4am</option>
+                        <option value="5am">5am</option>
+                        <option value="6am">6am</option>
+                        <option value="7am">7am</option>
+                        <option value="8am">8am</option>
+                        <option value="9am">9am</option>
+                        <option value="10am">10am</option>
+                        <option value="11am">11am</option>
+                        <option value="12pm">12pm</option>
+                        <option value="1pm">1pm</option>
+                        <option value="2pm">2pm</option>
+                        <option value="3pm">3pm</option>
+                        <option value="4pm">4pm</option>
+                        <option value="5pm">5pm</option>
+                        <option value="6pm">6pm</option>
+                        <option value="7pm">7pm</option>
+                        <option value="8pm">8pm</option>
+                        <option value="9pm">9pm</option>
+                        <option value="10pm">10pm</option>
+                        <option value="11pm">11pm</option>
+                        <option value="12am">12am</option>
+                    </select>
+                    <label>Thursday FROM:</label>
+                    <select id="from" name="daylist" form="dates">
+                        <option value="1am">1am</option>
+                        <option value="2am">2am</option>
+                        <option value="3am">3am</option>
+                        <option value="4am">4am</option>
+                        <option value="5am">5am</option>
+                        <option value="6am">6am</option>
+                        <option value="7am">7am</option>
+                        <option value="8am">8am</option>
+                        <option value="9am">9am</option>
+                        <option value="10am">10am</option>
+                        <option value="11am">11am</option>
+                        <option value="12pm">12pm</option>
+                        <option value="1pm">1pm</option>
+                        <option value="2pm">2pm</option>
+                        <option value="3pm">3pm</option>
+                        <option value="4pm">4pm</option>
+                        <option value="5pm">5pm</option>
+                        <option value="6pm">6pm</option>
+                        <option value="7pm">7pm</option>
+                        <option value="8pm">8pm</option>
+                        <option value="9pm">9pm</option>
+                        <option value="10pm">10pm</option>
+                        <option value="11pm">11pm</option>
+                        <option value="12am">12am</option>
+                    </select>
+                    <label>Friday FROM:</label>
+                    <select id="from" name="daylist" form="dates">
+                        <option value="1am">1am</option>
+                        <option value="2am">2am</option>
+                        <option value="3am">3am</option>
+                        <option value="4am">4am</option>
+                        <option value="5am">5am</option>
+                        <option value="6am">6am</option>
+                        <option value="7am">7am</option>
+                        <option value="8am">8am</option>
+                        <option value="9am">9am</option>
+                        <option value="10am">10am</option>
+                        <option value="11am">11am</option>
+                        <option value="12pm">12pm</option>
+                        <option value="1pm">1pm</option>
+                        <option value="2pm">2pm</option>
+                        <option value="3pm">3pm</option>
+                        <option value="4pm">4pm</option>
+                        <option value="5pm">5pm</option>
+                        <option value="6pm">6pm</option>
+                        <option value="7pm">7pm</option>
+                        <option value="8pm">8pm</option>
+                        <option value="9pm">9pm</option>
+                        <option value="10pm">10pm</option>
+                        <option value="11pm">11pm</option>
+                        <option value="12am">12am</option>
+                    </select>
+                    <label>Saturday FROM:</label>
+                    <select id="from" name="daylist" form="dates">
+                        <option value="1am">1am</option>
+                        <option value="2am">2am</option>
+                        <option value="3am">3am</option>
+                        <option value="4am">4am</option>
+                        <option value="5am">5am</option>
+                        <option value="6am">6am</option>
+                        <option value="7am">7am</option>
+                        <option value="8am">8am</option>
+                        <option value="9am">9am</option>
+                        <option value="10am">10am</option>
+                        <option value="11am">11am</option>
+                        <option value="12pm">12pm</option>
+                        <option value="1pm">1pm</option>
+                        <option value="2pm">2pm</option>
+                        <option value="3pm">3pm</option>
+                        <option value="4pm">4pm</option>
+                        <option value="5pm">5pm</option>
+                        <option value="6pm">6pm</option>
+                        <option value="7pm">7pm</option>
+                        <option value="8pm">8pm</option>
+                        <option value="9pm">9pm</option>
+                        <option value="10pm">10pm</option>
+                        <option value="11pm">11pm</option>
+                        <option value="12am">12am</option>
+                    </select>
+                </div>                
+            </section>
+            <section>
+                <h2 style="font-size:22px;">Apprenticeship Opportunities:</h2>
+                    <form action="/form-handler" method="POST">
+                        <p>Some opportunities for those aspiring to be in this field.:</p>
+                        <textarea name="text-input" rows="10" cols="100">We offer...</textarea>
+                        <br/>
+                        <input type="submit"/>
+                    </form>
+            </section>
+        </article>
+    </main>
+  </body>
+</html>
