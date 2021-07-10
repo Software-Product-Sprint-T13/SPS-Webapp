@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Webapp Project</title>
     <link rel="stylesheet" href="BusinessForm.css">
     <script src="BusinessForm.js"></script>
 
-    
-  </head>
-  <header>
-      <h1 style="font-size:22px;">Landing Page Creation: Business Form</h1>
-  </header>
-  <body>
-    <aside class = "aside">
-        <section>
-            <h2 style="font-size:22px;">Guidelines</h2>            
-                    <form action="/form-handler" id="guidelines">
-                    <p>Enter guidelines here:</p>
-                    <textarea name="text-input" rows="20" cols="40" placeholder="We follow..."></textarea>
-                    <br/>
-                </form>
-        </section>
-        <section>
-            <h2 style="font-size:22px;">Business Description</h2>            
-                    <form action="/form-handler" id="description">
-                    <p>Enter business description here:</p>
-                    <textarea name="text-input" rows="20" cols="40" placeholder="Our work entails..."></textarea>
-                    <br/>
-                </form>   
-        </section>
-    </aside>
-    <main>
-        <article>
+
+</head>
+<header>
+    <h1 style="font-size:22px;">Landing Page Creation: Business Form</h1>
+</header>
+
+<body>
+    <form>
+        <aside class="aside">
+            <section>
+                <h2 style="font-size:22px;">Guidelines</h2>
+                <!-- <form action="/form-handler" id="guidelines"> -->
+                <p>Enter guidelines here:</p>
+                <textarea name="text-input" rows="20" cols="40" placeholder="We follow..."></textarea>
+                <br />
+                <!-- </form> -->
+            </section>
+            <section>
+                <h2 style="font-size:22px;">Business Description</h2>
+                <!-- <form action="/form-handler" id="description"> -->
+                <p>Enter business description here:</p>
+                <textarea name="text-input" rows="20" cols="40" placeholder="Our work entails..."></textarea>
+                <br />
+                <!-- </form>    -->
+            </section>
+        </aside>
+        <main>
+
             <section>
                 <h2 style="font-size:22px;">Business Name:</h2>
-                    <form action="/form-handler" id="name">
-                        <p>Enter business name here:</p>
-                        <textarea name="text-input" rows="5" cols="100" placeholder="We go by..."></textarea>
-                        <br/>
-                    </form>
+                <!-- <form action="/form-handler" id="name"> -->
+                <p>Enter business name here:</p>
+                <textarea name="text-input" rows="5" cols="100" placeholder="We go by..."></textarea>
+                <br />
+                <!-- </form> -->
             </section>
             <section>
                 <h2 style="font-size:22px;">Business Address:</h2>
-                    <form action="/form-handler" id="address">
-                        <p>Enter business address here:</p>
-                        <textarea name="text-input" rows="10" cols="100" placeholder="We are located..."></textarea>
-                        <br/>
-                    </form>
+                <!-- <form action="/form-handler" id="address"> -->
+                <p>Enter business address here:</p>
+                <textarea name="text-input" rows="10" cols="100" placeholder="We are located..."></textarea>
+                <br />
+                <!-- </form> -->
             </section>
             <section>
                 <h2 style="font-size:22px;">Contact Number(s):</h2>
-                    <form action="/form-handler" id="number">
-                        <p>Enter business number here:</p>
-                        <textarea name="text-input" rows="5" cols="100" placeholder="You may reach us at..."></textarea>
-                        <br/>
-                    </form>
+                <!-- <form action="/form-handler" id="number"> -->
+                <p>Enter business number here:</p>
+                <textarea name="text-input" rows="5" cols="100" placeholder="You may reach us at..."></textarea>
+                <br />
+                <!-- </form> -->
             </section>
             <section>
                 <div class="fromops">
                     <h2 style="font-size:22px;">Availability:</h2>
-                    <form action="/form-handler" id="dates">
-                        <label for="availability">Dates and Time Selected:</label>
-                    </form>
-                    <br>                    
+                    <!-- <form action="/form-handler" id="dates"> -->
+                    <label for="availability">Dates and Time Selected:</label>
+                    <!-- </form> -->
+                    <br>
                     <label>Sunday FROM:</label>
                     <select id="from" name="daylist" form="dates">
                         <option value="1am">1am</option>
@@ -253,7 +256,8 @@
                         <option value="12am">12am</option>
                     </select>
                 </div>
-                <p>------------------------------------------------------------------------------------------------------------------</p>               
+                <p>------------------------------------------------------------------------------------------------------------------
+                </p>
                 <div class="toops">
                     <label>Sunday TO:</label>
                     <select id="to" name="daylist" form="dates">
@@ -444,18 +448,19 @@
                         <option value="11pm">11pm</option>
                         <option value="12am">12am</option>
                     </select>
-                </div>                
+                </div>
             </section>
             <section>
                 <h2 style="font-size:22px;">Apprenticeship Opportunities:</h2>
-                    <form action="/form-handler" id="opportunities">
-                        <p>Some opportunities for those aspiring to be in this field.:</p>
-                        <textarea name="text-input" rows="10" cols="100" placeholder="We offer..."></textarea>
-                        <br/>
-                    </form>
+                <!-- <form action="/form-handler" id="opportunities"> -->
+                <p>Some opportunities for those aspiring to be in this field.:</p>
+                <textarea name="text-input" rows="10" cols="100" placeholder="We offer..."></textarea>
+                <br />
+                <!-- </form> -->
             </section>
-            <input type="button" value="Submit all!" onclick="submitAllForms()"/>
-        </article>
-    </main>
-  </body>
+            <input type="submit" />
+        </main>
+    </form>
+</body>
+
 </html>
