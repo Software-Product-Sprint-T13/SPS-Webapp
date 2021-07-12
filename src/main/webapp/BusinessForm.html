@@ -6,20 +6,20 @@
     <title>Webapp Project</title>
     <link rel="stylesheet" href="BusinessForm.css">
 </head>
-    <header>
-        <nav class = "nav-header">
-            <ul class="nav-links">
-                <li><img src="/mypics/webapplogo1.png" width="60" 
-                height="40"/></li>
-                <li><a href="index.html">ABOUT</a></li>
-                <li><a href="BusinessForm.html">Business SignUp Application</a></li>
-                <li><a href="#menteeform">Freelance/Apprentice SignUp Application</a></li>
-                <li><a href="BusinessList.html">All Businesses A-Z</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav class="nav-header">
+        <ul class="nav-links">
+            <li><img src="/mypics/webapplogo1.png" width="60" height="40" /></li>
+            <li><a href="index.html">ABOUT</a></li>
+            <li><a href="BusinessForm.html">Business SignUp Application</a></li>
+            <li><a href="#menteeform">Freelance/Apprentice SignUp Application</a></li>
+            <li><a href="BusinessList.html">All Businesses A-Z</a></li>
+        </ul>
+    </nav>
+</header>
+
 <body>
-    <form method="POST" action="/form-handler">
+    <form method="POST" action="/form-handler" class="flex">
         <aside class="aside">
             <header>
                 <h1 style="font-size:22px; color: red;">Landing Page Creation: Business Form</h1>
@@ -58,57 +58,54 @@
                     <br />
                 </section>
                 <section>
-                    <div class="fromops">
+                    <div class="availability">
                         <h2 style="font-size:22px;">Availability:</h2>
                         <label for="availability">Dates and Time Selected:</label>
                         <br>
-                        <label>Sunday FROM:</label>
-                        <input type="time" id="sun-from" name="name" min="00:00" max="23:59">
-
-                        <label>Monday FROM:</label>
-                        <input type="time" id="sun-from" name="name" min="00:00" max="23:59">
-
-                        <label>Tuesday FROM:</label>
-                        <input type="time" id="sun-from" name="name" min="00:00" max="23:59">
-
-                        <label>Wednesday FROM:</label>
-                        <input type="time" id="sun-from" name="name" min="00:00" max="23:59">
-
-                        <label>Thursday FROM:</label>
-                        <input type="time" id="sun-from" name="name" min="00:00" max="23:59">
-
-                        <label>Friday FROM:</label>
-                        <input type="time" id="sun-from" name="name" min="00:00" max="23:59">
-
-                        <label>Saturday FROM:</label>
-                        <input type="time" id="sun-from" name="name" min="00:00" max="23:59">
-
+                        <div class="flex">
+                            <div>
+                                <label>Day</label>
+                                <labe>From</labe>
+                                <label>To</label>
+                            </div>
+                            <div>
+                                <label>Sunday</label>
+                                <input type="time" id="sun-from" name="name" min="00:00" max="23:59" class="from">
+                                <input type="time" id="sun-to" name="name" min="00:00" max="23:59" class="to">
+                            </div>
+                            <div>
+                                <label>Monday</label>
+                                <input type="time" id="mon-from" name="name" min="00:00" max="23:59" >
+                                <input type="time" id="mon-to" name="name" min="00:00" max="23:59" >
+                            </div>
+                            <div>
+                                <label>Tuesday</label>
+                                <input type="time" id="tue-from" name="name" min="00:00" max="23:59" >
+                                <input type="time" id="tue-to" name="name" min="00:00" max="23:59" >
+                            </div>
+                            <div>
+                                <label>Wednesday</label>
+                                <input type="time" id="wed-from" name="name" min="00:00" max="23:59">
+                                <input type="time" id="wed-to" name="name" min="00:00" max="23:59">
+                            </div>
+                            <div>
+                                <label>Thursday</label>
+                                <input type="time" id="thu-from" name="name" min="00:00" max="23:59">
+                                <input type="time" id="thu-t0" name="name" min="00:00" max="23:59">
+                            </div>
+                            <div>
+                                <label>Friday</label>
+                                <input type="time" id="fri-from" name="name" min="00:00" max="23:59">
+                                <input type="time" id="fri-to" name="name" min="00:00" max="23:59">
+                            </div>
+                            <div>
+                                <label>Saturday</label>
+                                <input type="time" id="sat-from" name="name" min="00:00" max="23:59" >
+                                <input type="time" id="sat-to" name="name" min="00:00" max="23:59">
+                            </div>
+                        </div>
                     </div>
-                    <p>------------------------------------------------------------------------------------------------------------------
-                    </p>
-                    <div class="toops">
-                        <label>Sunday TO:</label>
-                        <input type="time" id="sun-from" name="name" min="00:00" max="23:59">
 
-                        <label>Monday TO:</label>
-                        <input type="time" id="sun-from" name="name" min="00:00" max="23:59">
-
-                        <label>Tuesday TO:</label>
-                        <input type="time" id="sun-from" name="name" min="00:00" max="23:59">
-
-                        <label>Wednesday TO:</label>
-                        <input type="time" id="sun-from" name="name" min="00:00" max="23:59">
-
-                        <label>Thursday TO:</label>
-                        <input type="time" id="sun-from" name="name" min="00:00" max="23:59">
-
-                        <label>Friday TO:</label>
-                        <input type="time" id="sun-from" name="name" min="00:00" max="23:59">
-
-                        <label>Saturday TO:</label>
-                        <input type="time" id="sun-from" name="name" min="00:00" max="23:59">
-
-                    </div>
                 </section>
                 <section>
                     <h2 style="font-size:22px;">Apprenticeship Opportunities:</h2>
@@ -121,4 +118,5 @@
         <input type="submit" />
     </form>
 </body>
+
 </html>
