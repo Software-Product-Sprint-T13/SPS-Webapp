@@ -52,7 +52,7 @@ aside {
     color:white;
 }
 
-aside section {
+body form aside section {
   background-color: #5983df;
   padding: 10px;
   width:300px;
@@ -76,4 +76,4 @@ article {
 }
 div {
   display:inline;
-}
+} 
