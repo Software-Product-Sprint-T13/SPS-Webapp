@@ -1,7 +1,11 @@
+
 #content {
   margin-left: auto;
   margin-right: auto;
   width: 650px;
+}
+body {
+  background-image: url(/mypics/tb2.png);
 }
 header{
   color: gold;
@@ -36,43 +40,29 @@ header li a:hover {
   color: white;
 }
 
-h2 {
-  color: gold;
-  border-bottom: 2px solid red;
-}
-body {
-  background-image: url(/mypics/tb2.png);
-}
-aside {
-    margin: 10px;
-    background-color: #7f848f;
-    width:320px;
-    height:auto;
-    padding-right:20px;
-    color:white;
-}
-
-aside section {
-  background-color: #5983df;
-  padding: 10px;
-  width:300px;
-}
-
 main {
     background-color: #7f848f;
     position: absolute;
-    right: 50px;
+    right: 80px;
     top: 89px;
     height:1500px;
-    width:920px;    
+    width:950px; 
+    padding-top: 50px;   
 }
 article {
   color: white;
-  padding: 10px;
   background-color: #5983df;
   height:1480px;
-  width:860px;
+  padding-left: 50px;
+  padding-top: 20px;   
   font-size: 17px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 5px solid #555;
 }
 div {
   display:inline;
