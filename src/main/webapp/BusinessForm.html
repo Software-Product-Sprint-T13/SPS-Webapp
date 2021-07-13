@@ -6,65 +6,13 @@
     <title>Webapp Project</title>
     <link rel="stylesheet" href="BusinessForm.css">
 
-<<<<<<< HEAD
-    
   </head>
-  <header>
-      <h1 style="font-size:22px;">Landing Page Creation: Business Form</h1>
-  </header>
-  <body>
-    <aside class = "aside">
-        <section>
-            <h2 style="font-size:22px;">Guidelines</h2>            
-                    <form action="/form-handler" method="POST" id="guidelines">
-                    <p>Enter guidelines here:</p>
-                    <textarea name="guidelines-input" rows="20" cols="40" placeholder="We follow..."></textarea>
-                    <br/>
-                </form>
-        </section>
-        <section>
-            <h2 style="font-size:22px;">Business Description</h2>            
-                    <form action="/form-handler" method="POST" id="description">
-                    <p>Enter business description here:</p>
-                    <textarea name="description-input" rows="20" cols="40" placeholder="Our work entails..."></textarea>
-                    <br/>
-                </form>   
-        </section>
-    </aside>
-    <main>
-        <article>
-            <section>
-                <h2 style="font-size:22px;">Business Name:</h2>
-                    <form action="/form-handler" method="POST" id="name">
-                        <p>Enter business name here:</p>
-                        <textarea name="name-input" rows="5" cols="100" placeholder="We go by..."></textarea>
-                        <br/>
-                    </form>
-            </section>
-            <section>
-                <h2 style="font-size:22px;">Business Address:</h2>
-                    <form action="/form-handler" method="POST" id="address">
-                        <p>Enter business address here:</p>
-                        <textarea name="address-input" rows="10" cols="100" placeholder="We are located..."></textarea>
-                        <br/>
-                    </form>
-            </section>
-            <section>
-                <h2 style="font-size:22px;">Contact Number(s):</h2>
-                    <form action="/form-handler" method="POST" id="number">
-                        <p>Enter business number here:</p>
-                        <textarea name="number-input" rows="5" cols="100" placeholder="You may reach us at..."></textarea>
-                        <br/>
-                    </form>
-=======
-
-</head>
 <header>
     <h1 style="font-size:22px;">Landing Page Creation: Business Form</h1>
 </header>
 
 <body>
-    <form method="POST" action="/form-handler">
+    <form action="/form-handler" method="POST">
         <aside class="aside">
             <section>
                 <h2 style="font-size:22px;">Guidelines</h2>
@@ -73,7 +21,7 @@
             </section>
             <section>
                 <h2 style="font-size:22px;">Business Description</h2>
-                <textarea name="text-input" rows="20" cols="40" placeholder="Our work entails..."></textarea>
+                <textarea name="description-input" rows="20" cols="40" placeholder="Our work entails..."></textarea>
                 <br />
             </section>
         </aside>
@@ -81,37 +29,28 @@
 
             <section>
                 <h2 style="font-size:22px;">Business Name:</h2>
-                <textarea name="text-input" rows="5" cols="100" placeholder="We go by..."></textarea>
+                <textarea name="name-input" rows="5" cols="100" placeholder="We go by..."></textarea>
                 <br />
             </section>
             <section>
                 <h2 style="font-size:22px;">Business Address:</h2>
-                <input type="text" name="text-input" placeholder="Street Address"></input>
-                <input type="text" name="text-input" placeholder="City"></input>
-                <input type="text" name="text-input" placeholder="State"></input>
-                <input type="number" name="text-input" placeholder="Zip code"></input>
+                <input type="text" name="address-input" placeholder="Street Address"></input>
+                <input type="text" name="city-input" placeholder="City"></input>
+                <input type="text" name="state-input" placeholder="State"></input>
+                <input type="number" name="zip-input" placeholder="Zip code"></input>
 
                 <br />
             </section>
             <section>
                 <h2 style="font-size:22px;">Contact Number(s):</h2>
                 <p>Enter business number here:</p>
-                <input type="number" name="text-input" placeholder="8004567890"></input>
+                <input type="number" name="number-input" placeholder="8004567890"></input>
                 <br />
->>>>>>> 2b7d62a9398b1dd10f5541e9d68b2f90bf6cc086
             </section>
             <section>
-                <div class="fromops">
                     <h2 style="font-size:22px;">Availability:</h2>
-<<<<<<< HEAD
-                    <form action="/form-handler" method="POST" id="dates">
-                        <label for="availability">Dates and Time Selected:</label>
-                    </form>
-                    <br>                    
-=======
                     <label for="availability">Dates and Time Selected:</label>
                     <br>
->>>>>>> 2b7d62a9398b1dd10f5541e9d68b2f90bf6cc086
                     <label>Sunday FROM:</label>
                     <input type="time" id="sun-from" name="name" min="00:00" max="23:59">
 
@@ -162,21 +101,8 @@
             </section>
             <section>
                 <h2 style="font-size:22px;">Apprenticeship Opportunities:</h2>
-<<<<<<< HEAD
-                    <form action="/form-handler" method="POST" id="opportunities">
-                        <p>Some opportunities for those aspiring to be in this field.:</p>
-                        <textarea name="opportunities-input" rows="10" cols="100" placeholder="We offer..."></textarea>
-                        <br/>
-                    </form>
-=======
-                <p>Some opportunities for those aspiring to be in this field.:</p>
                 <textarea name="text-input" rows="10" cols="100" placeholder="We offer..."></textarea>
                 <br />
->>>>>>> 2b7d62a9398b1dd10f5541e9d68b2f90bf6cc086
             </section>
         </main>
         <input type="submit" />
-    </form>
-</body>
-
-</html>
