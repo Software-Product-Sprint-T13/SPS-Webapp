@@ -77,3 +77,21 @@ article {
 div {
   display:inline;
 } 
+.flex{
+    display: flex;
+}
+
+input[type="time"]:before {
+    color: black;
+    position: absolute;
+    background: rgb(255, 255, 255);
+}
+input.from:before{
+    content: "FROM";
+}
+input.to:before{
+    content: "TO";
+}
+input[type="time"]:hover:before {
+    content: '';
+}
