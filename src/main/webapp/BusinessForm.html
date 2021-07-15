@@ -5,14 +5,7 @@
     <meta charset="UTF-8">
     <title>Webapp Project</title>
     <link rel="stylesheet" href="BusinessForm.css">
-<<<<<<< HEAD
-
-  </head>
-<header>
-    <h1 style="font-size:22px;">Landing Page Creation: Business Form</h1>
-</header>
-
-=======
+    <script src= "BusinessForm.js"></script>
 </head>
     <header>
         <nav class = "nav-header">
@@ -26,8 +19,9 @@
             </ul>
         </nav>
     </header>
->>>>>>> bc480d37e3e180f2b4d5e6ec33d8ece50a8f79a3
-<body>
+<body onload="loadTasks()">
+    <p id="task-list"></p>
+
     <form action="/form-handler" method="POST">
         <aside class="aside">
             <header>
