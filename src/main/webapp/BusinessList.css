@@ -1,4 +1,3 @@
-
 #content {
   margin-left: auto;
   margin-right: auto;
@@ -42,19 +41,28 @@ header li a:hover {
 
 main {
     background-color: #7f848f;
-    position: absolute;
-    right: 200px;
-    top: 98px;
-    height:1500px;
-    width:950px; 
-    padding-top: 50px;   
+    padding: 50px;   
 }
 article {
   color: white;
   background-color: #5983df;
-  height:1480px;
-  padding-left: 50px;
-  padding-right: 50px;  
+  min-height:900px;
+  padding: 50px;
   padding-top: 20px;   
   font-size: 17px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 5px solid #555;
+}
+div {
+  display:inline;
+}
+
+.table{
+    background-color: white;
+    color: black;
 }
