@@ -27,7 +27,7 @@ public class ShowBusinessFormServlet extends HttpServlet {
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
     Query<Entity> query =
-        Query.newEntityQueryBuilder().setKind("Task").setOrderBy(OrderBy.desc("name")).build();
+        Query.newEntityQueryBuilder().setKind("Business Data").setOrderBy(OrderBy.desc("name")).build();
     QueryResults<Entity> results = datastore.run(query);
 
     List<Task> tasks = new ArrayList<>();
