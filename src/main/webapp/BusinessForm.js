@@ -7,3 +7,12 @@ submitAllForms = function(){
     document.getElementById("dates").submit();
     document.getElementById("opportunities").submit();
 }
+
+function loadTasks() {
+  fetch('/show-form').then(response => response.json()).then((tasks) => {
+    const taskListElement = document.getElementById('task-list');
+    tasks.forEach((task) => {
+      taskListElement.appendChild(createTaskElement(task));
+    })
+  });
+}
