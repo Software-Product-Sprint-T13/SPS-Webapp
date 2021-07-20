@@ -6,17 +6,20 @@ option 2 is to create the page in an html doc and use script to load all dynamic
 
 // option 2 (in use)
 // This function loads database info into a premade html page for individual business data
-function uniqueInfo(){
+async function uniqueInfo(){
     // hardcoded for test purposes
-    const request = {website:"https://www.google.com", street:"Street address", city:"Brooklyn", state:"NY", zipcode:"11437", email:"hello@google.com", tel:"8008812315", description:"About business and all other necessary information", apprenticeship:"Apprenticeship information displayed in this box"}
+    // const request = {website:"https://www.google.com", street:"Street address", city:"Brooklyn", state:"NY", zipcode:"11437", email:"hello@google.com", tel:"8008812315", description:"About business and all other necessary information", apprenticeship:"Apprenticeship information displayed in this box"}
 
 
     // request the information that was logged to database
     // encapsulate information as json
 
-    // const request = await fetch("/url");
-    const responseFromServer = request;
+    const request = await fetch("/show-form");
+    const responseFromServer = request.json();
     console.log(responseFromServer);
+
+    
+
 
     // get placeholder tag that information will be displayed in
     // use the information for dynamic data
@@ -48,13 +51,12 @@ function uniqueInfo(){
     tel.innerText = telNum;
     tel.href = "tel:"+ telNum;
     // Business description
-    const aboutId = document.getElementById("about-b");
-    const about = responseFromServer.description;
-    aboutId.innerText = about;
+    // const aboutId = document.getElementById("about-b");
+    // const about = responseFromServer.description;
+    // aboutId.innerText = about;
 
     // Availabilty needs much work. waiting on sample POST to complete.
-    const availabiltyId = document.getElementById("working-days");
-
+    // const availabiltyId = document.getElementById("working-days");
 
 }
 // _______________________________END SCRIPT FOR BUSINESS LANDING PAGE (businessLandingPage.html)________________________________//
