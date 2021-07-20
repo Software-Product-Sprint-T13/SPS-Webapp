@@ -7,9 +7,9 @@
         type="image/png" 
         href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-U7OJLJsIenFYU0tTKWNxx6bRa4zsibpChw&usqp=CAU"/>
     <link rel="stylesheet" href="BusinessList.css">
-    <script src="script.js"></script>
+    <script src="BusinessList.js"></script>
   </head>
-  <body>
+  <body onload="fetchBusinessData()">
     <header>
     <nav class = "nav-header">
         <ul class="nav-links">
@@ -30,7 +30,7 @@
             </section>
             <section class="list-space">
                 <br> List of Businesses
-                <p id="business-list" class="table">one two three ... columns & rows</p>
+                <ul id="business-list" class="table"></ul>
             </section>
         </article>
     </main>
