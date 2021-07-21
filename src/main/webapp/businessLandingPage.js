@@ -3,7 +3,8 @@ option 1 is to use java to create the page
 option 2 is to create the page in an html doc and use script to load all dynamic information
 */
 
-
+const theId = localStorage.getItem('id');
+console.log(theId)
 // option 2 (in use)
 // This function loads database info into a premade html page for individual business data
 async function uniqueInfo(){
@@ -15,44 +16,59 @@ async function uniqueInfo(){
     // encapsulate information as json
 
     const request = await fetch("/show-form");
-    const responseFromServer = request.json();
-    console.log(responseFromServer);
+    const responseFromServer =  await request.json();
+    console.log(responseFromServer[0])
 
+function findIndexOfId(response){
+    var i;
+    for (i = 0; i < response.length; i++){
+        if(response[i].id==theId){
+            console.log("I found the id index " + i)
+            return i;
+        }
+    }
     
-
+}    
+    
+var idIndex = responseFromServer[findIndexOfId(responseFromServer)];
+console.log("the entire block = " + idIndex.name)
 
     // get placeholder tag that information will be displayed in
     // use the information for dynamic data
-    const street = responseFromServer.street;
+    const name = idIndex.name;
+    const nameId = document.getElementById("name");
+    nameId.innerText = name;
+
+    const street = idIndex.street;
     const streetId = document.getElementById("street");
     streetId.innerText = street;
 
-    const city = responseFromServer.city;
-    const state = responseFromServer.state;
-    const zip = responseFromServer.zipcode;
+    const city = idIndex.city;
+    const state = idIndex.state;
+    const zip = idIndex.zipcode;
     const cityStateZip = city + ", " + state + " " + zip;
     const addressId = document.getElementById("city-state-zip");
     addressId.innerText = cityStateZip;
 
     const webId = document.getElementById("website");
-    const websiteAdd = responseFromServer.website;
+    const websiteAdd = idIndex.website;
     webId.innerText = websiteAdd;
     // dynamic href
     webId.href = websiteAdd;
 
     const email = document.getElementById("email");
-    const emailAdd = responseFromServer.email;
+    const emailAdd = idIndex.email;
     email.innerText = emailAdd;
     email.href = "mailto:" + emailAdd;
 
 
     const tel = document.getElementById("tel");
-    const telNum = responseFromServer.tel;
+    const telNum = idIndex.tel;
     tel.innerText = telNum;
     tel.href = "tel:"+ telNum;
     // Business description
     // const aboutId = document.getElementById("about-b");
-    // const about = responseFromServer.description;
+    // const about = idIndex.description;
     // aboutId.innerText = about;
 
     // Availabilty needs much work. waiting on sample POST to complete.
@@ -60,3 +76,14 @@ async function uniqueInfo(){
 
 }
 // _______________________________END SCRIPT FOR BUSINESS LANDING PAGE (businessLandingPage.html)________________________________//
+
+// function getId(){
+//     //grab the Id that was clicked from BusinessList.html
+//     const requestId = await fetch("/BusinessList.html")
+//     const responsefromB = requestId.json();
+//     console.log(responsefromB)
+// }
+// function fetchIdData(){
+//     //Grab the index of the block that has the id that was clicked
+
+// }
