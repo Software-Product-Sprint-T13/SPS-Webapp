@@ -18,7 +18,7 @@ function createElements(business) {
     nameElement.href = "businessLandingPage.html";
     nameElement.className = "business";
     nameElement.addEventListener("click", function (){
-        alert(this.id);
+        // alert(this.id);
         var myId = this.id;
         localStorage.setItem('id', myId);
     });
