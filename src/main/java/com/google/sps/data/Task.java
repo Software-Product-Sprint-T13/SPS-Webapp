@@ -32,38 +32,10 @@ public final class Task {
     private final String sat1;
     private final String sat2;
 
-
-
-
-
-    public Task(
-        Long id, 
-        String name, 
-        Long timestamp, 
-        String street, 
-        String city, 
-        String state, 
-        String zip,  
-        String tel, 
-        String description, 
-        String apprenticeship, 
-        String email, 
-        String website,
-        String sun1,
-        String sun2,
-        String mon1,
-        String mon2,
-        String tue1,
-        String tue2,
-        String wed1,
-        String wed2,
-        String thur1,
-        String thur2,
-        String fri1,
-        String fri2,
-        String sat1,
-        String sat2
-        ) {
+    public Task(Long id, String name, Long timestamp, String street, String city, String state, String zip, String tel,
+            String description, String apprenticeship, String email, String website, String sun1, String sun2,
+            String mon1, String mon2, String tue1, String tue2, String wed1, String wed2, String thur1, String thur2,
+            String fri1, String fri2, String sat1, String sat2) {
         this.id = id;
         this.name = name;
         this.timestamp = timestamp;
@@ -72,7 +44,7 @@ public final class Task {
         this.state = state;
         this.zip = zip;
         this.tel = tel;
-        this.description= description;
+        this.description = description;
         this.apprenticeship = apprenticeship;
         this.website = website;
         this.email = email;

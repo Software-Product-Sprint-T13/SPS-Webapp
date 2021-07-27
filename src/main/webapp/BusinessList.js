@@ -14,7 +14,7 @@ function createElements(business) {
     const nameElement = document.createElement('a');
     nameElement.href = "businessLandingPage.html";
     nameElement.className = "business";
-    nameElement.addEventListener("click", function (){
+    nameElement.addEventListener("click", function () {
         var myId = this.id;
         localStorage.setItem('id', myId);
     });
@@ -22,7 +22,7 @@ function createElements(business) {
     nameContainer.appendChild(nameElement);
     nameElement.innerText = business.name;
 
-    const businessInfo =  document.createElement("p");
+    const businessInfo = document.createElement("p");
     businessInfo.innerText = business.description;
     nameContainer.appendChild(businessInfo);
     return nameContainer;

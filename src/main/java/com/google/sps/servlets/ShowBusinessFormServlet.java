@@ -1,5 +1,5 @@
 
-package com.google.sps.servlets; 
+package com.google.sps.servlets;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -33,20 +33,19 @@ public class ShowBusinessFormServlet extends HttpServlet {
         List<Task> tasks = new ArrayList<>();
         while (results.hasNext()) {
             Entity entity = results.next();
-            // System.out.println(entity.getProperties().get("street").get());
             long id = entity.getKey().getId();
             String name = entity.getString("name");
             long timestamp = entity.getLong("timestamp");
-            String street = entity.contains("street")?entity.getString("street"):"";
-            String city = entity.contains("city")?entity.getString("city"):"";
-            String state = entity.contains("state")?entity.getString("state"):"";
-            String zip = entity.contains("zipcode")?entity.getString("zipcode"):"";
-            String tel = entity.contains("Tel")?entity.getString("Tel"):"";
-            String description = entity.contains("description")?entity.getString("description"):"";
-            String apprenticeship = entity.contains("apprenticeship")?entity.getString("apprenticeship"):"";
+            String street = entity.contains("street") ? entity.getString("street") : "";
+            String city = entity.contains("city") ? entity.getString("city") : "";
+            String state = entity.contains("state") ? entity.getString("state") : "";
+            String zip = entity.contains("zipcode") ? entity.getString("zipcode") : "";
+            String tel = entity.contains("Tel") ? entity.getString("Tel") : "";
+            String description = entity.contains("description") ? entity.getString("description") : "";
+            String apprenticeship = entity.contains("apprenticeship") ? entity.getString("apprenticeship") : "";
 
-            String email = entity.contains("email")?entity.getString("email"):"";
-            String website = entity.contains("website")?entity.getString("website"):"";
+            String email = entity.contains("email") ? entity.getString("email") : "";
+            String website = entity.contains("website") ? entity.getString("website") : "";
 
             // availability
             String sunFrom = entity.contains("sunday1") ? entity.getString("sunday1") : "";
@@ -64,39 +63,9 @@ public class ShowBusinessFormServlet extends HttpServlet {
             String satFrom = entity.contains("saturday1") ? entity.getString("saturday1") : "";
             String satTo = entity.contains("saturday2") ? entity.getString("saturday2") : "";
 
-
-
-
-            // System.out.println("data query: ");
-
-            Task task = new Task(
-                id,
-                name, 
-                timestamp, 
-                street, 
-                city, 
-                state, 
-                zip, 
-                tel, 
-                description, 
-                apprenticeship, 
-                email, 
-                website, 
-                sunFrom,
-                sunTo,
-                monFrom,
-                monTo,
-                tueFrom,
-                tueTo,
-                wedFrom,
-                wedTo,
-                thurFrom,
-                thurTo,
-                friFrom,
-                friTo,
-                satFrom,
-                satTo
-                );
+            Task task = new Task(id, name, timestamp, street, city, state, zip, tel, description, apprenticeship, email,
+                    website, sunFrom, sunTo, monFrom, monTo, tueFrom, tueTo, wedFrom, wedTo, thurFrom, thurTo, friFrom,
+                    friTo, satFrom, satTo);
             tasks.add(task);
         }
 

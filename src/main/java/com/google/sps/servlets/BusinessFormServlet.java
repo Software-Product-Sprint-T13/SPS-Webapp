@@ -23,10 +23,7 @@ public class BusinessFormServlet extends HttpServlet {
 
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-   // Sanitize user input to remove HTML tags and JavaScript.
-    //look for the name of the element for the input in the html file
-
-    
+   // Sanitize user input to remove HTML tags and JavaScript.    
     String description = Jsoup.clean(request.getParameter("description-input"), Whitelist.none());
     String name = Jsoup.clean(request.getParameter("name-input"), Whitelist.none());
     String street = Jsoup.clean(request.getParameter("address-input"), Whitelist.none());
@@ -49,15 +46,8 @@ public class BusinessFormServlet extends HttpServlet {
     String sat2 = Jsoup.clean(request.getParameter("sat2"), Whitelist.none());
     String tue1 = Jsoup.clean(request.getParameter("tue1"), Whitelist.none());
     String tue2 = Jsoup.clean(request.getParameter("tue2"), Whitelist.none());
-
     String email = Jsoup.clean(request.getParameter("email-input"), Whitelist.none());
     String website = Jsoup.clean(request.getParameter("website-input"), Whitelist.none());
-
-
-    
-
-
-    
     long timestamp = System.currentTimeMillis();
 
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
@@ -92,7 +82,6 @@ public class BusinessFormServlet extends HttpServlet {
             
             .build();
     datastore.put(taskEntity);
-    
     response.sendRedirect("/BusinessForm.html");
   }
 }

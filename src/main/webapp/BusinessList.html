@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>SPS Webapp Project</title>
-    <link rel="icon" 
-        type="image/png" 
-        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-U7OJLJsIenFYU0tTKWNxx6bRa4zsibpChw&usqp=CAU"/>
+    <link rel="icon" type="image/png"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-U7OJLJsIenFYU0tTKWNxx6bRa4zsibpChw&usqp=CAU" />
     <link rel="stylesheet" href="BusinessList.css">
     <script src="BusinessList.js"></script>
-  </head>
-  <body onload="fetchBusinessData()">
+</head>
+
+<body onload="fetchBusinessData()">
     <header>
-    <nav class = "nav-header">
-        <ul class="nav-links">
-            <li><img src="/mypics/webapplogo1.png" width="60" 
-               height="40"/></li>
-            <li><a href="index.html">ABOUT/HOME</a></li>
-            <li><a href="BusinessForm.html">Business SignUp Application</a></li>
-            <li><a href="#menteeform">Freelance/Apprentice SignUp Application</a></li>
-            <li><a href="BusinessList.html">All Businesses A-Z</a></li>
-        </ul>
-    </nav>
+        <nav class="nav-header">
+            <ul class="nav-links">
+                <li><img src="/mypics/webapplogo1.png" width="60" height="40" /></li>
+                <li><a href="index.html">ABOUT/HOME</a></li>
+                <li><a href="BusinessForm.html">Business SignUp Application</a></li>
+                <li><a href="#menteeform">Freelance/Apprentice SignUp Application</a></li>
+                <li><a href="BusinessList.html">All Businesses A-Z</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <article>
             <section>
-                <h2 style="font-size:22px; color: gold; position: right;">Search for Business!</h2>   
+                <h2 style="font-size:22px; color: gold; position: right;">Search for Business!</h2>
                 <input type="text" id="list" onkeyup="Search()" placeholder="Search for businesses...">
             </section>
             <section class="list-space">
@@ -36,4 +36,5 @@
         </article>
     </main>
 </body>
+
 </html>
