@@ -6,10 +6,13 @@ public final class Task {
   private final long id;
   private final String name;
   private final long timestamp;
+  //private final String street;
 
   public Task(long id, String name, long timestamp) {
     this.id = id;
     this.name = name;
     this.timestamp = timestamp;
+    //this.street = street;
+
   }
 }

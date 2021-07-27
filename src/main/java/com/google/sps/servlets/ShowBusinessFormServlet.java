@@ -37,7 +37,8 @@ public class ShowBusinessFormServlet extends HttpServlet {
       long id = entity.getKey().getId();
       String name = entity.getString("name");
       long timestamp = entity.getLong("timestamp");
-     
+      //String street = entity.getString("street");
+
       Task task = new Task(id, name, timestamp);
       tasks.add(task);
     }
