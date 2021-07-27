@@ -50,8 +50,8 @@ public class BusinessFormServlet extends HttpServlet {
     String tue1 = Jsoup.clean(request.getParameter("tue1"), Whitelist.none());
     String tue2 = Jsoup.clean(request.getParameter("tue2"), Whitelist.none());
 
-    // String email = Jsoup.clean(request.getParameter("email-input"), Whitelist.none());
-    // String website = Jsoup.clean(request.getParameter("website-input"), Whitelist.none());
+    String email = Jsoup.clean(request.getParameter("email-input"), Whitelist.none());
+    String website = Jsoup.clean(request.getParameter("website-input"), Whitelist.none());
 
 
     
@@ -67,8 +67,8 @@ public class BusinessFormServlet extends HttpServlet {
             .set("description", description)
             .set("name", name)
             .set("timestamp", timestamp)
-            // .set("email", email)
-            // .set("website", website)
+            .set("email", email)
+            .set("website", website)
             .set("street", street)
             .set("city", city)
             .set("state", state)
