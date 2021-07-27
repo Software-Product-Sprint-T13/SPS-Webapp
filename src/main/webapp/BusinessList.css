@@ -65,4 +65,9 @@ div {
 .table{
     background-color: white;
     color: black;
+    display: flex;
+    flex-direction: column;
+}
+.table > li:nth-of-type(odd){
+    background-color: rgb(226, 217, 217);
 }

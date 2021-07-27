@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Webapp Project</title>
     <link rel="stylesheet" href="BusinessForm.css">
-    <script src="BusinessForm.js"></script>
 </head>
 <header>
     <nav class="nav-header">
@@ -29,7 +28,7 @@
                 <article>
                     <section>
                         <h2 style="font-size:22px;">Business Name:</h2>
-                        <input type="text" name="name-input" placeholder="We go by..."></input>
+                        <input type="text" name="name-input" placeholder="We go by..." required></input>
                         <br />
                     </section>
                     <section>
@@ -38,7 +37,8 @@
                         <input type="text" name="city-input" placeholder="City"></input>
                         <input type="text" name="state-input" placeholder="State"></input>
                         <input type="number" name="zip-input" placeholder="Zip code"></input>
-
+                        <input type="email" name="email-input" placeholder="Email Address"></input>
+                        <input type="url" name="website-input" placeholder="Website url"></input>
                         <br />
                     </section>
                     <section>
@@ -48,68 +48,69 @@
                         <br />
                     </section>
                     <section>
-                    <div class="availability">
-                        <h2 style="font-size:22px;">Availability:</h2>
-                        <label for="availability">Dates and Time Selected:</label>
-                        <br>
-                        <div class="flex avail-row">
-                            <div>
-                                <label class="c1">Day</label>
-                                <label>From</label>
-                                <label>To</label>
-                            </div>
-                            <div>
-                                <label >Sunday</label>
-                                <input type="time" id="sun-from" name="sun1" min="00:00" max="23:59" class="from">
-                                <input type="time" id="sun-to" name="sun2" min="00:00" max="23:59" class="to">
-                            </div>
-                            <div >
-                                <label>Monday</label>
-                                <input type="time" id="mon-from" name="mon1" min="00:00" max="23:59">
-                                <input type="time" id="mon-to" name="mon2" min="00:00" max="23:59">
-                            </div>
-                            <div>
-                                <label>Tuesday</label>
-                                <input type="time" id="tue-from" name="tue1" min="00:00" max="23:59">
-                                <input type="time" id="tue-to" name="tue2" min="00:00" max="23:59">
-                            </div>
-                            <div>
-                                <label>Wednesday</label>
-                                <input type="time" id="wed-from" name="wed1" min="00:00" max="23:59">
-                                <input type="time" id="wed-to" name="wed2" min="00:00" max="23:59">
-                            </div>
-                            <div>
-                                <label>Thursday</label>
-                                <input type="time" id="thu-from" name="thur1" min="00:00" max="23:59">
-                                <input type="time" id="thu-t0" name="thur2" min="00:00" max="23:59">
-                            </div>
-                            <div>
-                                <label>Friday</label>
-                                <input type="time" id="fri-from" name="fri1" min="00:00" max="23:59">
-                                <input type="time" id="fri-to" name="fri2" min="00:00" max="23:59">
-                            </div>
-                            <div>
-                                <label>Saturday</label>
-                                <input type="time" id="sat-from" name="sat1" min="00:00" max="23:59">
-                                <input type="time" id="sat-to" name="sat2" min="00:00" max="23:59">
+                        <div class="availability">
+                            <h2 style="font-size:22px;">Availability:</h2>
+                            <label for="availability">Dates and Time Selected:</label>
+                            <br>
+                            <div class="flex avail-row">
+                                <div>
+                                    <label class="c1">Day</label>
+                                    <label>From</label>
+                                    <label>To</label>
+                                </div>
+                                <div>
+                                    <label>Sunday</label>
+                                    <input type="time" id="sun-from" name="sun1" min="00:00" max="23:59" class="from">
+                                    <input type="time" id="sun-to" name="sun2" min="00:00" max="23:59" class="to">
+                                </div>
+                                <div>
+                                    <label>Monday</label>
+                                    <input type="time" id="mon-from" name="mon1" min="00:00" max="23:59">
+                                    <input type="time" id="mon-to" name="mon2" min="00:00" max="23:59">
+                                </div>
+                                <div>
+                                    <label>Tuesday</label>
+                                    <input type="time" id="tue-from" name="tue1" min="00:00" max="23:59">
+                                    <input type="time" id="tue-to" name="tue2" min="00:00" max="23:59">
+                                </div>
+                                <div>
+                                    <label>Wednesday</label>
+                                    <input type="time" id="wed-from" name="wed1" min="00:00" max="23:59">
+                                    <input type="time" id="wed-to" name="wed2" min="00:00" max="23:59">
+                                </div>
+                                <div>
+                                    <label>Thursday</label>
+                                    <input type="time" id="thu-from" name="thur1" min="00:00" max="23:59">
+                                    <input type="time" id="thu-t0" name="thur2" min="00:00" max="23:59">
+                                </div>
+                                <div>
+                                    <label>Friday</label>
+                                    <input type="time" id="fri-from" name="fri1" min="00:00" max="23:59">
+                                    <input type="time" id="fri-to" name="fri2" min="00:00" max="23:59">
+                                </div>
+                                <div>
+                                    <label>Saturday</label>
+                                    <input type="time" id="sat-from" name="sat1" min="00:00" max="23:59">
+                                    <input type="time" id="sat-to" name="sat2" min="00:00" max="23:59">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
                 </article>
             </aside>
             <main class="">
                 <section>
                     <h2 style="font-size:22px;">Guidelines</h2>
-                    <div>Guidlines we give to businesses to complete the form.</div>
+                    <div>Business Guidelines</div>
                     <br />
                 </section>
                 <section>
                     <h2 style="font-size:22px;">Business Description</h2>
-                    <textarea name="description-input" rows="10" cols="100" placeholder="Our work entails..."></textarea>
+                    <textarea name="description-input" rows="10" cols="100" placeholder="Our work entails..."
+                        required></textarea>
                     <br />
                 </section>
-                
+
                 <section>
                     <h2 style="font-size:22px;">Apprenticeship Opportunities:</h2>
                     <p>Some opportunities for those aspiring to be in this field.:</p>

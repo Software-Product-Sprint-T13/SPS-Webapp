@@ -50,16 +50,12 @@ body {
 aside {
     margin: 10px auto auto auto;
     background-color: #7f848f;
-    /* width:320px; */
     height:auto;
-    /* padding-right:20px; */
     color:white;
 }
 
 body form aside section {
   background-color: #5983df;
-  /* padding: 10px;
-  width:300px; */
 }
 
 main {
@@ -67,18 +63,11 @@ main {
     height: auto;
     margin: 10px auto auto auto;
     padding: 10px 10px 10px 10px;
-    /* position: absolute;
-    right: 50px;
-    top: 89px;
-    height:1500px;
-    width:920px;     */
 }
 article {
   color: white;
   padding: 10px;
   background-color: #5983df;
-  /* height:1480px; */
-  /* width:860px; */
   font-size: 17px;
 }
 div {
@@ -92,7 +81,6 @@ div {
     display: inherit;
     flex-direction: row;
     justify-content: space-between;
-    /* border: 2px solid yellow; */
 }
 
 input[type="time"]:before {
@@ -116,19 +104,14 @@ input[type="time"]:hover:before {
 
 .avail-row div label:nth-of-type(1) {
     width: 30%;
-    /* background-color: yellowgreen; */
 }
 
 .avail-row div label:nth-of-type(2) {
   width: 30%;
   margin-left: 20px;
-  /* padding-left: 10px; */
-  /* background-color: gold; */
   text-align: center;
 }
 .avail-row div label:nth-of-type(3){
     width: 30%;
-    /* margin-left: 20px; */
-    /* background-color: goldenrod; */
     text-align: center;
 }
